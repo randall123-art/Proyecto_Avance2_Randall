@@ -1,0 +1,14 @@
+# Maven / Gradle / NetBeans
+target/
+build/
+nbproject/private/
+dist/
+
+# IDEs
+*.iml
+.idea/
+.vscode/
+
+# Base de datos local y logs
+*.db
+*.log
