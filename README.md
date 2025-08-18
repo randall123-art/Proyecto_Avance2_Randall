@@ -23,4 +23,21 @@ Incluye **cliente-servidor concurrente** con **sockets** y **persistencia** con 
 [Pega aquí el link de Teams/OneDrive]
 
 ## Autor
-Tu nombre completo – Curso/Grupo
+Randall Quintero Orozco – Curso Programacion Cliente Servidor
+Ejemplo de ejecusión
+## Ejemplo de ejecución
+
+1. Compilar el proyecto:
+   - Si usas Maven: `mvn -q -DskipTests package`
+   - Si usas NetBeans: Construir proyecto
+
+2. Ejecutar el servidor:
+
+3. Ejecutar el cliente:
+
+4. Menú del cliente:
+- 1 → Agregar usuario
+- 2 → Listar usuarios
+- 3 → Agregar audiovisual
+- 4 → Listar audiovisuales
+- 5 → Salir
