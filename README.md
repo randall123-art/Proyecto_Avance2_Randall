@@ -1,43 +1,51 @@
 # Proyecto Final – Programación Cliente/Servidor Concurrente
 
-**Descripción:** Aplicación Java que resuelve [describe tu problema: gestión de audiovisuales/usuarios/etc.].  
+**Descripción:** Aplicación Java que resuelve la gestión de usuarios y audiovisuales.  
 Incluye **cliente-servidor concurrente** con **sockets** y **persistencia** con **JDBC** (sin frameworks).
 
 ## Tecnologías
-- Java 17 (o tu versión)
+- Java 17
 - Sockets (cliente/servidor)
-- JDBC + (SQLite/MySQL)
-- (NetBeans/Maven)
+- JDBC + SQLite
+- NetBeans / Maven
 
 ## Cómo ejecutar
-1. Compilar: `mvn -q -DskipTests package` (o abrir en NetBeans y construir).
-2. Servidor: ejecutar `app.MainServer` (puerto 5000).
-3. Cliente: ejecutar `app.ClientCLI` y usar el menú (agregar/listar usuarios y audiovisuales).
 
-## Estructura
-- `src/main/java/...`
-- `pom.xml`
-- (Agregar diagrama breve si tienes)
+1. **Compilar el proyecto**
+   - Si usas Maven:  
+     ```
+     mvn -q -DskipTests package
+     ```
+   - Si usas NetBeans: Construir proyecto.
 
-## Video de presentación
-[Pega aquí el link de Teams/OneDrive]
+2. **Ejecutar el servidor**
 
-## Autor
-Randall Quintero Orozco – Curso Programacion Cliente Servidor
-Ejemplo de ejecusión
-## Ejemplo de ejecución
+3. **Ejecutar el cliente**
 
-1. Compilar el proyecto:
-   - Si usas Maven: `mvn -q -DskipTests package`
-   - Si usas NetBeans: Construir proyecto
-
-2. Ejecutar el servidor:
-
-3. Ejecutar el cliente:
-
-4. Menú del cliente:
+4. **Menú del cliente**
 - 1 → Agregar usuario
 - 2 → Listar usuarios
 - 3 → Agregar audiovisual
 - 4 → Listar audiovisuales
 - 5 → Salir
+
+## Estructura del proyecto
+- `src/main/java/...`
+- `pom.xml`
+- `docs/capturas/` (si subes capturas del servidor y cliente)
+- `README.md`
+- `.gitignore`
+
+## Capturas de pantalla
+*(Opcional: subir imágenes a `docs/capturas/` y referenciarlas aquí)*  
+Ejemplo:  
+![Servidor ejecutando](docs/capturas/server-ejecutando.png)  
+![Cliente ejecutando](docs/capturas/client-ejecutando.png)
+
+## Video de presentación
+[Pega aquí el link de Teams/OneDrive]
+
+## Autor
+Randall Quintero Orozco – Curso Programación Cliente/Servidor
+Randall Quintero Orozco – Curso Programación Cliente/Servidor
+
