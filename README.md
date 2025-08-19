@@ -49,8 +49,7 @@ Para la demostración del video, estos son los usuarios creados:
 > Todas las operaciones se registran en el historial y se muestran en la opción "Mostrar historial de operaciones".
 
 ## Capturas de pantalla
-*(Opcional: subir imágenes a `docs/capturas/` y referenciarlas aquí)*  
-
+ 
 Ejemplo:  
 ![Menú principal](docs/capturas/menu-principal.png)  
 ![Transferencia exitosa](docs/capturas/transferencia-exitosa.png)  
