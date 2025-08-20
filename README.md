@@ -75,7 +75,7 @@ Ejemplo:
 ![Transferencia exitosa](docs/capturas/transferencia-exitosa.png)  
 
 ## Video de presentación
-[Ver video de demostración](https://youtu.be/drZs_aAIR9I)  
+[Ver video de demostración](https://youtu.be/drZs_aAIR9I?si=f-gFSVxDybLRy1Nk)  
 
 ## Autor
 Randall Quintero Orozco – Curso Programación Cliente/Servidor
