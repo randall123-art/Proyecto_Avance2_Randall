@@ -4,19 +4,15 @@
 Aplicación Java que simula un **cajero automático**.  
 Permite la **gestión de usuarios y cuentas bancarias**, incluyendo operaciones de **depósitos, retiros, transferencias y consulta de historial de transacciones**.  
 
-Se implementaron los siguientes conceptos del curso:  
-- **Clases y objetos**  
-- **Herencia y polimorfismo**  
-- **Manejo de excepciones**  
-- **Colecciones (List, ArrayList)**  
-- **Interfaz gráfica con JOptionPane**  
-- **Persistencia de datos en base de datos Derby (Java DB)**  
+Se utiliza **interfaz gráfica con JOptionPane**, **excepciones**, **herencia** y **polimorfismo**, manteniendo la estructura de clases que se implementó para el Avance 1 y 2.  
+
+Ahora, todas las operaciones se guardan en una **base de datos Derby (Java DB)** para cumplir con los requisitos de persistencia.
 
 ## Tecnologías
 - Java 17  
 - Swing (JOptionPane)  
-- JDBC + Derby (Java DB)  
 - Colecciones y excepciones personalizadas  
+- JDBC + Derby (Java DB)  
 - NetBeans IDE / Maven  
 
 ## Usuarios de prueba
@@ -28,7 +24,7 @@ Para la demostración del video, estos son los usuarios creados en la base de da
 | María González   | 1234 | $500          |
 | Juan Pérez       | 9876 | $1200         |
 
-> Se pueden usar estos datos para realizar depósitos, retiros o transferencias durante la prueba.
+> Puedes usar estos datos para realizar depósitos, retiros o transferencias durante la prueba.
 
 ## Cómo ejecutar
 
@@ -42,31 +38,23 @@ Para la demostración del video, estos son los usuarios creados en la base de da
 2. **Configurar la base de datos Derby**
    - Asegúrate de tener iniciado el servicio **Java DB** en NetBeans.  
    - Crear la base de datos `BancoDB` con usuario `app` y contraseña `app`.  
-   - El proyecto creará automáticamente las tablas necesarias si no existen.
+   - El proyecto se conectará automáticamente y guardará las operaciones allí.
 
-3. **Ejemplo de SQL para crear las tablas en Derby**
-```sql
-CREATE TABLE Usuarios (
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    nombre VARCHAR(50) NOT NULL,
-    pin VARCHAR(10) NOT NULL
-);
+3. **Ejecutar la aplicación**
+   - Ejecuta la clase principal:
+     ```bash
+     java -cp target/ProyectoFinal-1.0-SNAPSHOT.jar proyectoavance2randall.InterfazCajero
+     ```
+   - Aparecerá un **JOptionPane** para ingresar el PIN del usuario.
 
-CREATE TABLE Cuentas (
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    numeroCuenta VARCHAR(20) NOT NULL,
-    saldo DOUBLE NOT NULL,
-    usuario_id INT NOT NULL,
-    FOREIGN KEY (usuario_id) REFERENCES Usuarios(id)
-);
+4. **Menú principal**
+   - Consultar saldo  
+   - Depositar dinero  
+   - Retirar dinero  
+   - Transferir dinero a otro usuario  
+   - Mostrar historial de operaciones  
+   - Salir  
 
-CREATE TABLE Operaciones (
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    tipoOperacion VARCHAR(20) NOT NULL,
-    monto DOUBLE NOT NULL,
-    cuentaOrigen VARCHAR(20),
-    cuentaDestino VARCHAR(20),
-    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 > Todas las operaciones se registran tanto en memoria como en la base de datos Derby.
 
 ## Capturas de pantalla
@@ -75,10 +63,7 @@ Ejemplo:
 ![Transferencia exitosa](docs/capturas/transferencia-exitosa.png)  
 
 ## Video de presentación
-[Ver video de demostración](https://youtu.be/drZs_aAIR9I)
-https://youtu.be/drZs_aAIR9I?si=e7ALV4xybngUJKRO
+[Ver video de demostración](https://youtu.be/drZs_aAIR9I?si=e7ALV4xybngUJKRO)  
 
 ## Autor
 Randall Quintero Orozco – Curso Programación Cliente/Servidor
-);
-
